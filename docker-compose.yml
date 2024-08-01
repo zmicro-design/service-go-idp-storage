@@ -1,7 +1,7 @@
 services:
   go-idp-storage:
     restart: always
-    image: whatwewant/go-idp-storage:${SERVICE_GO_IDP_STORAGE_IMAGE_VERSION}
+    image: ${SERVICE_IMAGE_REGISTRY}/whatwewant/go-idp-storage:${SERVICE_GO_IDP_STORAGE_IMAGE_VERSION}
     # ports:
     #   - 0.0.0.0:${SERVICE_GO_IDP_STORAGE_PORT}:8080
     environment:
