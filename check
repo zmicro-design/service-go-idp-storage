@@ -14,8 +14,8 @@ check() {
 
   service::config_set SERVICE_GO_IDP_STORAGE_BASE_DIR text "Base Dir" "/"
 
-  service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_KEY text "OSS_ACCESS_KEY"
-  service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_SECRET text "OSS_ACCESS_SECRET"
+  service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_KEY_ID text "OSS_ACCESS_KEY_ID"
+  service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_KEY_SECRET text "OSS_ACCESS_KEY_SECRET"
   service::config_set SERVICE_GO_IDP_STORAGE_OSS_BUCKET text "OSS_BUCKET"
   service::config_set SERVICE_GO_IDP_STORAGE_OSS_ENDPOINT text "OSS_ENDPOINT"
 
