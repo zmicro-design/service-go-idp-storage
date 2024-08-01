@@ -1,0 +1,18 @@
+services:
+  go-idp-storage:
+    restart: always
+    image: whatwewant/go-idp-storage:${SERVICE_GO_IDP_STORAGE_IMAGE_VERSION}
+    # ports:
+    #   - 0.0.0.0:${SERVICE_GO_IDP_STORAGE_PORT}:8080
+    environment:
+      BASE_DIR: ${SERVICE_GO_IDP_STORAGE_BASE_DIR}
+      OSS_ACCESS_KEY: ${SERVICE_GO_IDP_STORAGE_OSS_ACCESS_KEY}
+      OSS_ACCESS_SECRET: ${SERVICE_GO_IDP_STORAGE_OSS_ACCESS_SECRET}
+      OSS_ACCESS_BUCKET: ${SERVICE_GO_IDP_STORAGE_OSS_ACCESS_BUCKET}
+      OSS_ENDPOINT: ${SERVICE_GO_IDP_STORAGE_OSS_ENDPOINT}
+      OSS_BASE_DIR: ${SERVICE_GO_IDP_STORAGE_OSS_BASE_DIR}
+      
+networks:
+  default:
+    external: true
+    name: compose-ingress

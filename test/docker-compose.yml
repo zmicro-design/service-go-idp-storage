@@ -1,0 +1,13 @@
+services:
+  go-idp-storage:
+    restart: always
+    image: whatwewant/go-idp-storage:${SERVICE_GO_IDP_STORAGE_IMAGE_VERSION}
+    environment:
+      PORT: $SERVICE_GO_IDP_STORAGE_PORT
+      USERNAME: ${SERVICE_GO_IDP_STORAGE_USERNAME}
+      PASSWORD: ${SERVICE_GO_IDP_STORAGE_PASSWORD}
+      
+networks:
+  default:
+    external: true
+    name: compose-ingress
