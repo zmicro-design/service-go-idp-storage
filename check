@@ -12,7 +12,7 @@ check() {
 
   # service::config_set SERVICE_GO_IDP_STORAGE_PORT text "Port" 8024
 
-  service::config_set SERVICE_GO_IDP_BASE_DIR text "Base Dir" "/"
+  service::config_set SERVICE_GO_IDP_STORAGE_BASE_DIR text "Base Dir" "/"
 
   service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_KEY text "OSS_ACCESS_KEY"
   service::config_set SERVICE_GO_IDP_STORAGE_OSS_ACCESS_SECRET text "OSS_ACCESS_SECRET"
